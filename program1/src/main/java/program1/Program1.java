@@ -2,6 +2,14 @@ package program1;
 
 import program1.WebCrawler;
 
+/**
+ * 
+ * @author Alvin Manalastas
+ * CSS490 Program 1
+ * 18 January 2018
+ *
+ */
+
 public class Program1 {
 	
 	public static void main(String[] args) {
@@ -13,7 +21,10 @@ public class Program1 {
 		WebCrawler wc = new WebCrawler();
 		
 		int numHops = Integer.parseInt(args[1]);
-		System.out.println(wc.crawl(args[0], numHops));
+		
+		String finalPage = "";
+		System.out.println(String.format("Final page: %s", finalPage = wc.crawl(args[0], numHops)));
+		System.out.println(wc.getHtml(finalPage));
 	}
 
 }
