@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+.main {
+    float: center;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
